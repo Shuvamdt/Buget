@@ -18,17 +18,17 @@ const Navbar = () => {
             </a>
           </div>
           <div className="hidden md:flex justify-evenly items-center px-2 text-lg lg:text-xl font-1">
-            <a href="#dashboard" className="px-5">
+            <a href="/dashboard" className="px-5">
               Dashboard
             </a>
-            <a href="#Targets" className="px-5">
+            <a href="/targets" className="px-5">
               Targets
             </a>
-            <a href="#CurrentProgress" className="px-5">
-              Current Progress
-            </a>
-            <a href="#Expenses" className="px-5">
+            <a href="/expenses" className="px-5">
               Expenses
+            </a>
+            <a href="/about" className="px-5">
+              About
             </a>
           </div>
           <div className="hidden md:flex justify-evenly items-center px-2">
@@ -52,7 +52,9 @@ const Navbar = () => {
           <div>
             <div className="fixed flex flex-col justify-center items-center font-1 w-40 top-20 h- py-2 right-5 z-5 rounded-lg bg-[#FAA307]">
               <ul className="flex flex-col items-center justify-center">
-                <li className="py-2">My Account</li>
+                <li className="py-2">
+                  <a href="/my-account">My Account</a>
+                </li>
                 <li className="py-2">Sign out</li>
               </ul>
             </div>
@@ -71,10 +73,22 @@ const Navbar = () => {
               </div>
               <div className="absolute top-10 px-5 py-4">
                 <ul className="flex flex-col items-end justify-center">
-                  <li className="py-2">Dashboard</li>
-                  <li className="py-2">Targets</li>
-                  <li className="py-2">Current Progress</li>
-                  <li className="py-2">Expenses</li>
+                  <li className="py-2">
+                    <a href="/dashboard">Dashboard</a>
+                  </li>
+                  <li className="py-2">
+                    <a href="/targets">Targets</a>
+                  </li>
+                  <li className="py-2">
+                    <a href="/expenses">Expenses</a>
+                  </li>
+                  <li className="py-2">
+                    <a href="/about">About</a>
+                  </li>
+                  <li className="py-2">
+                    <a href="/my-account">My Account</a>
+                  </li>
+                  <li className="py-2">Sign out</li>
                 </ul>
               </div>
             </div>
