@@ -4,7 +4,7 @@ html {
   margin: 0;
   padding: 0;
   height: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 body {
   background: #ffba08;
@@ -37,4 +37,27 @@ body {
   height: 100%;
   object-fit: cover;
   opacity: 0.18;
+}
+/* For Chrome, Safari, Edge */
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #ffba08;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #03071e;
+  border-radius: 4px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #03071e;
+}
+
+/* For Firefox */
+body {
+  scrollbar-width: thin;
+  scrollbar-color: #03071e #ffba08;
 }

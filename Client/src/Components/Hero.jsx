@@ -9,6 +9,10 @@ const Hero = () => {
           <br />{" "}
           <span className="text-[#D00000] font-italic">Effortlessly</span>
         </h1>
+        <p className="font-1 text-sm md:text-lg md:text-end px-5 py-5 sm:py-2">
+          This is a financial management system that helps you <br /> easily
+          manage your earnings and savings.
+        </p>
       </div>
     </div>
   );
