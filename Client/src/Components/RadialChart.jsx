@@ -21,9 +21,7 @@ import { ChartContainer } from "@/components/ui/chart";
 
 export const description = "A radial chart with text";
 
-const chartData = [
-  { browser: "safari", visitors: 200, fill: "var(--color-safari)" },
-];
+const chartData = [{ browser: "safari", visitors: 200, fill: "#D00000" }];
 
 const chartConfig = {
   visitors: {
@@ -37,10 +35,12 @@ const chartConfig = {
 
 export function ChartRadialText() {
   return (
-    <Card className="flex flex-col">
+    <Card className="flex flex-col bg-[#FAA307] text-[#03071E]">
       <CardHeader className="items-center pb-0">
         <CardTitle>Radial Chart - Text</CardTitle>
-        <CardDescription>January - June 2024</CardDescription>
+        <CardDescription>
+          <p className="text-[#E85D04]">January - June 2024</p>
+        </CardDescription>
       </CardHeader>
       <CardContent className="flex-1 pb-0">
         <ChartContainer
@@ -58,7 +58,7 @@ export function ChartRadialText() {
               gridType="circle"
               radialLines={false}
               stroke="none"
-              className="first:fill-muted last:fill-background"
+              className="first:fill-[#E85D04] last:fill-[#FFBA08]"
               polarRadius={[86, 74]}
             />
             <RadialBar dataKey="visitors" background cornerRadius={10} />
@@ -83,7 +83,7 @@ export function ChartRadialText() {
                         <tspan
                           x={viewBox.cx}
                           y={(viewBox.cy || 0) + 24}
-                          className="fill-muted-foreground"
+                          className="fill-[#6A040F]"
                         >
                           Visitors
                         </tspan>
@@ -102,7 +102,9 @@ export function ChartRadialText() {
           Trending up by 5.2% this month <TrendingUp className="h-4 w-4" />
         </div>
         <div className="text-muted-foreground leading-none">
-          Showing total visitors for the last 6 months
+          <p className="text-[#E85D04]">
+            Showing total visitors for the last 6 months
+          </p>
         </div>
       </CardFooter>
     </Card>
