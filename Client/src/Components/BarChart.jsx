@@ -37,10 +37,12 @@ const chartConfig = {
 
 export function ChartBarDefault() {
   return (
-    <Card>
+    <Card className="bg-[#FAA307] text-[#03071E]">
       <CardHeader>
         <CardTitle>Bar Chart</CardTitle>
-        <CardDescription>January - June 2024</CardDescription>
+        <CardDescription>
+          <p className="text-[#E85D04]">January - June 2024</p>
+        </CardDescription>
       </CardHeader>
       <CardContent>
         <ChartContainer config={chartConfig}>
@@ -66,7 +68,9 @@ export function ChartBarDefault() {
           Trending up by 5.2% this month <TrendingUp className="h-4 w-4" />
         </div>
         <div className="text-muted-foreground leading-none">
-          Showing total visitors for the last 6 months
+          <p className="text-[#DC2F02]">
+            Showing total visitors for the last 6 months
+          </p>
         </div>
       </CardFooter>
     </Card>
