@@ -153,7 +153,7 @@ export function ChartAreaInteractive() {
   });
 
   return (
-    <Card className="pt-0 p-2 mx-8 bg-[#FAA307] text-[#03071E]">
+    <Card className="pt-0 bg-[#FAA307] text-[#03071E] w-full">
       <CardHeader className="flex items-center gap-2 space-y-0 py-5 sm:flex-row">
         <div className="grid flex-1 gap-1">
           <CardTitle>Area Chart - Interactive</CardTitle>
@@ -183,10 +183,10 @@ export function ChartAreaInteractive() {
           </SelectContent>
         </Select>
       </CardHeader>
-      <CardContent className="px-2 pt-4 sm:px-6 sm:pt-6">
+      <CardContent className="flex flex-1 px-2 pt-4 sm:px-6 sm:pt-6">
         <ChartContainer
           config={chartConfig}
-          className="aspect-auto h-[250px] w-full"
+          className="flex-1 aspect-auto h-[250px] w-full"
         >
           <AreaChart data={filteredData}>
             <defs>

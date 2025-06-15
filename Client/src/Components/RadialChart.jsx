@@ -42,10 +42,10 @@ export function ChartRadialText() {
           <p className="text-[#E85D04]">January - June 2024</p>
         </CardDescription>
       </CardHeader>
-      <CardContent className="flex-1 pb-0">
+      <CardContent className="flex flex-1 pb-0">
         <ChartContainer
           config={chartConfig}
-          className="mx-auto aspect-square max-h-[250px]"
+          className="flex-1 mx-auto aspect-square max-h-[250px]"
         >
           <RadialBarChart
             data={chartData}
