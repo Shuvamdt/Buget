@@ -37,7 +37,7 @@ const chartConfig = {
 
 export function ChartBarDefault() {
   return (
-    <Card className="bg-[#FAA307] text-[#03071E]">
+    <Card className="py-18.5 bg-[#FAA307] text-[#03071E]">
       <CardHeader>
         <CardTitle>Bar Chart</CardTitle>
         <CardDescription>
