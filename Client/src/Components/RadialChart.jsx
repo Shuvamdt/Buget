@@ -76,7 +76,7 @@ export function ChartRadialText() {
                         <tspan
                           x={viewBox.cx}
                           y={viewBox.cy}
-                          className="fill-foreground text-4xl font-bold"
+                          className="fill-[#03071E] text-4xl font-bold"
                         >
                           {chartData[0].visitors.toLocaleString()}
                         </tspan>
