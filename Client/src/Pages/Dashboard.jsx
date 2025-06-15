@@ -2,6 +2,7 @@ import React from "react";
 import { ChartAreaInteractive } from "../Components/AreaChart";
 import { ChartBarDefault } from "../Components/BarChart";
 import { ChartPieDonutActive } from "../Components/PieChart";
+import { ChartRadialText } from "../Components/RadialChart";
 
 const Dashboard = () => {
   return (
@@ -9,6 +10,7 @@ const Dashboard = () => {
       <div className="flex w-full justify-center items-center p-4 m-4 gap-4">
         <ChartBarDefault />
         <ChartPieDonutActive />
+        <ChartRadialText />
       </div>
       <ChartAreaInteractive />
     </div>
